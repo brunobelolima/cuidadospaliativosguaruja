@@ -45,3 +45,30 @@ O formulário monta a solicitação no navegador e abre uma conversa no WhatsApp
 - Cada pergunta aparece somente após a anterior ser respondida.
 - Triagem de segurança interrompe o fluxo eletivo quando há possível urgência/emergência.
 - Resultado final mostra modalidade sugerida, justificativa, valor e CTA para agendamento.
+
+## Atualização v2.3 — N2B
+- N2B — Cuidado Integrado — R$ 1.000/mês.
+- Para complexidade moderada com necessidade multiprofissional.
+- Inclui 1 visita médica domiciliar/mês + 1 teleconsulta em até 1 mês.
+- Enfermagem por telessaúde 1x por semana.
+
+## Atualização v2.4 — estrutura final dos níveis
+
+- N1 — Acompanhamento — R$ 300/mês
+  - 2 teleconsultas de enfermagem/mês.
+
+- N2A — Cuidado Médico — R$ 700/mês
+  - 1 visita médica domiciliar/mês.
+  - 1 teleconsulta médica em até 1 mês.
+
+- N2B — Cuidado Integrado — R$ 1.300/mês
+  - 1 visita médica domiciliar/mês.
+  - 1 teleconsulta médica em até 1 mês.
+  - 1 teleconsulta de enfermagem/semana.
+
+- N3 — Cuidado Intensivo — R$ 2.000/mês
+  - 2 visitas médicas domiciliares/mês.
+  - 2 teleconsultas médicas/mês.
+  - 1 teleconsulta de enfermagem/semana.
+
+Terminologia padronizada: “teleconsulta de enfermagem”.
