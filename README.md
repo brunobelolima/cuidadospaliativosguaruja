@@ -22,3 +22,8 @@ Envie os arquivos para a raiz de um repositório e ative Pages em Settings > Pag
 
 ## Observação
 O formulário monta a solicitação no navegador e abre uma conversa no WhatsApp profissional. Os dados não são enviados a um servidor próprio do site antes dessa ação.
+
+## Equipe profissional
+- Bruno Belo Lima: foto e minicurrículo inseridos.
+- Marinete Esteves Franco: foto e minicurrículo inseridos.
+- As imagens são carregadas a partir das fontes originais do site iCare/Google Drive.

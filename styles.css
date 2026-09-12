@@ -226,3 +226,97 @@ textarea{resize:vertical}
 .legal-warning strong{color:var(--deep)}
 .legal-warning p{margin-bottom:0;color:var(--muted)}
 .legal-back{margin-top:36px}
+
+/* v1.5 — contraste dos CTAs */
+.btn,
+.btn:link,
+.btn:visited,
+.nav .btn,
+.nav .btn:link,
+.nav .btn:visited,
+.contact-form .btn {
+  color: #FFFFFF !important;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.nav .btn:hover,
+.nav .btn:focus,
+.contact-form .btn:hover,
+.contact-form .btn:focus {
+  color: #FFFFFF !important;
+}
+
+/* v1.6 — equipe e minicurrículos */
+.team-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+}
+.team-card{
+  display:grid;
+  grid-template-columns:180px 1fr;
+  gap:26px;
+  align-items:start;
+  background:#fff;
+  border:1px solid rgba(7,63,74,.08);
+  border-radius:28px;
+  padding:24px;
+  box-shadow:0 16px 44px rgba(7,63,74,.06);
+}
+.team-photo-wrap{
+  border-radius:22px;
+  overflow:hidden;
+  background:var(--cream);
+  aspect-ratio:4/5;
+}
+.team-photo{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.team-role{
+  margin:0 0 6px;
+  color:var(--ocean);
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.team-card h3{
+  margin:0 0 14px;
+  color:var(--deep);
+  font-size:26px;
+  line-height:1.1;
+}
+.team-card p{
+  color:var(--muted);
+  margin:0;
+  font-size:14px;
+}
+.team-credentials{
+  display:inline-block;
+  margin-top:16px;
+  padding:8px 12px;
+  border-left:2px solid var(--sand);
+  background:var(--cream);
+  color:var(--deep);
+  font-size:12px;
+  font-weight:750;
+}
+.team-note{
+  margin-top:24px;
+  padding:18px 22px;
+  border-radius:18px;
+  background:var(--cream);
+  color:var(--muted);
+}
+.team-note strong{color:var(--deep)}
+@media(max-width:900px){
+  .team-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .team-card{grid-template-columns:1fr}
+  .team-photo-wrap{max-width:240px}
+}
