@@ -80,6 +80,13 @@
       },
       {
         "@type": "Offer",
+        "name": "Acompanhamento Médico em Consultório",
+        "price": "600",
+        "priceCurrency": "BRL",
+        "description": "Consulta médica presencial em Cuidados Paliativos com uma reavaliação em até 30 dias."
+      },
+      {
+        "@type": "Offer",
         "name": "Avaliação Domiciliar em Cuidados Paliativos",
         "price": "700",
         "priceCurrency": "BRL"
@@ -112,6 +119,7 @@
 
       <nav id="menu" class="nav" aria-label="Navegação principal">
         <a href="#cuidados">Cuidados Paliativos</a>
+        <a href="#primeira-avaliacao">Qual atendimento?</a>
         <a href="#servicos">Atendimento</a>
         <a href="#programa">Acompanhamento</a>
         <a href="#sobre">Sobre</a>
@@ -224,6 +232,149 @@
       </div>
     </section>
 
+    
+    <!-- FLUXO PRIMEIRA AVALIACAO START -->
+    <section class="section first-assessment-flow" id="primeira-avaliacao">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Primeira avaliação</p>
+          <h2>Consultório, domicílio ou teleconsulta?</h2>
+          <p>
+            Responda uma pergunta de cada vez. Ao final, o fluxo sugere qual modalidade tende a ser
+            mais adequada para a <strong>primeira avaliação em Cuidados Paliativos</strong>.
+          </p>
+        </div>
+
+        <div class="decision-flow" id="first-care-step">
+          <div class="decision-progress" aria-hidden="true">
+            <div class="decision-progress-track">
+              <div class="decision-progress-bar" id="fs-progress" style="width:20%"></div>
+            </div>
+            <span id="fs-progress-text">1 de 5</span>
+          </div>
+
+          <section id="fs-q1" class="decision-step">
+            <p class="decision-kicker">Segurança</p>
+            <h3>Existe algum sinal de urgência agora?</h3>
+            <p class="decision-help">
+              Falta de ar intensa, sangramento importante, rebaixamento agudo da consciência,
+              convulsão prolongada ou repetida, sofrimento intenso ou outra situação de risco imediato.
+            </p>
+            <div class="decision-options two">
+              <button type="button" data-q="1" data-v="no" class="decision-option">Não</button>
+              <button type="button" data-q="1" data-v="yes" class="decision-option">Sim / não tenho certeza</button>
+            </div>
+          </section>
+
+          <section id="fs-q2" class="decision-step" hidden>
+            <p class="decision-kicker">Deslocamento</p>
+            <h3>O paciente consegue ir ao consultório com segurança e sem sofrimento desproporcional?</h3>
+            <div class="decision-options">
+              <button type="button" data-q="2" data-v="easy" class="decision-option text-option">
+                <strong>Sim.</strong> O deslocamento é simples e bem tolerado.
+              </button>
+              <button type="button" data-q="2" data-v="help" class="decision-option text-option">
+                <strong>Sim, com ajuda.</strong> Precisa de acompanhante, cadeira de rodas ou auxílio para entrar e sair do veículo, mas o deslocamento é possível.
+              </button>
+              <button type="button" data-q="2" data-v="hard" class="decision-option text-option">
+                <strong>É difícil.</strong> Sair de casa causa muito cansaço, dor, falta de ar, confusão ou grande esforço.
+              </button>
+              <button type="button" data-q="2" data-v="unsafe" class="decision-option text-option">
+                <strong>Não.</strong> Está acamado, a transferência é insegura ou o deslocamento parece desproporcional.
+              </button>
+            </div>
+          </section>
+
+          <section id="fs-q3" class="decision-step" hidden>
+            <p class="decision-kicker">Ambiente de cuidado</p>
+            <h3>Conhecer o ambiente da casa é importante para esta primeira avaliação?</h3>
+            <p class="decision-help">
+              Por exemplo: mobilidade, cama, banheiro, cuidador, organização dos medicamentos,
+              oxigênio, sondas, feridas, dispositivos ou segurança do cuidado.
+            </p>
+            <div class="decision-options">
+              <button type="button" data-q="3" data-v="yes" class="decision-option text-option">
+                <strong>Sim.</strong> Avaliar a casa provavelmente ajudará a definir o plano.
+              </button>
+              <button type="button" data-q="3" data-v="no" class="decision-option text-option">
+                <strong>Não.</strong> O ambiente não parece ser uma questão central agora.
+              </button>
+              <button type="button" data-q="3" data-v="unsure" class="decision-option text-option">
+                <strong>Não sei.</strong>
+              </button>
+            </div>
+          </section>
+
+          <section id="fs-q4" class="decision-step" hidden>
+            <p class="decision-kicker">Avaliação remota</p>
+            <h3>Há alguma razão importante para começar por teleconsulta?</h3>
+            <p class="decision-help">
+              Na primeira avaliação, consultório ou domicílio costumam fornecer mais informações presenciais.
+            </p>
+            <div class="decision-options">
+              <button type="button" data-q="4" data-v="no" class="decision-option text-option">
+                <strong>Não.</strong> Uma avaliação presencial é viável.
+              </button>
+              <button type="button" data-q="4" data-v="distance" class="decision-option text-option">
+                <strong>Sim.</strong> Existe dificuldade logística relevante para atendimento presencial neste momento.
+              </button>
+              <button type="button" data-q="4" data-v="discussion" class="decision-option text-option">
+                <strong>Sim.</strong> O principal objetivo inicial é conversar sobre história clínica, sintomas, exames, objetivos e planejamento.
+              </button>
+            </div>
+          </section>
+
+          <section id="fs-q5" class="decision-step" hidden>
+            <p class="decision-kicker">Condições para telessaúde</p>
+            <h3>Existem boas condições para uma primeira avaliação por telemedicina?</h3>
+            <div class="decision-options">
+              <button type="button" data-q="5" data-v="yes" class="decision-option text-option">
+                <strong>Sim.</strong> Há boa conexão, privacidade, possibilidade de vídeo e o paciente ou cuidador consegue participar.
+              </button>
+              <button type="button" data-q="5" data-v="partial" class="decision-option text-option">
+                <strong>Parcialmente.</strong> Existe alguma dificuldade técnica ou de comunicação.
+              </button>
+              <button type="button" data-q="5" data-v="no" class="decision-option text-option">
+                <strong>Não.</strong> A avaliação remota provavelmente seria insuficiente.
+              </button>
+            </div>
+          </section>
+
+          <section id="fs-urgent" class="decision-result urgent-result" hidden aria-live="assertive">
+            <p class="decision-kicker">Prioridade de segurança</p>
+            <h3>Não aguarde uma primeira avaliação eletiva.</h3>
+            <p>
+              Quando existe risco imediato — ou não é possível excluí-lo com segurança — consultório,
+              visita programada ou teleconsulta não devem atrasar o cuidado necessário. Siga o plano de
+              intercorrências e procure o recurso de urgência/emergência apropriado, incluindo SAMU 192 quando indicado.
+            </p>
+            <button type="button" data-restart class="decision-secondary">Recomeçar</button>
+          </section>
+
+          <section id="fs-result" class="decision-result" hidden aria-live="polite">
+            <p class="decision-kicker">Sugestão para a primeira avaliação</p>
+            <h3 id="fs-title"></h3>
+            <p id="fs-text"></p>
+            <div id="fs-why" class="decision-why"></div>
+            <div id="fs-price" class="decision-price"></div>
+            <p class="decision-disclaimer">
+              A sugestão é orientativa. A equipe pode modificar a modalidade após conhecer melhor a situação
+              ou se houver necessidade de exame físico presencial.
+            </p>
+            <div class="decision-result-actions">
+              <a class="btn" href="#contato">Agende sua consulta</a>
+              <button type="button" data-restart class="decision-secondary">Refazer o fluxo</button>
+            </div>
+          </section>
+
+          <div id="fs-back-wrap" class="decision-back" hidden>
+            <button id="fs-back" type="button" class="decision-secondary">← Voltar à pergunta anterior</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FLUXO PRIMEIRA AVALIACAO END -->
+
     <section class="section" id="servicos">
       <div class="container">
         <div class="section-heading">
@@ -253,6 +404,19 @@
             <ul>
               <li>Consulta de 60–90 minutos, conforme necessidade</li>
               <li>1 reavaliação em até 30 dias</li>
+            </ul>
+          </article>
+
+          <article class="price-card">
+            <div>
+              <p class="price-label">Acompanhamento Médico em Consultório</p>
+              <h3>R$ 600</h3>
+              <p>Seguimento presencial para pacientes que permanecem estáveis e conseguem comparecer ao consultório.</p>
+            </div>
+            <ul>
+              <li>1 consulta médica presencial em Cuidados Paliativos</li>
+              <li>1 reavaliação em até 30 dias</li>
+              <li>Periodicidade individualizada conforme necessidade clínica</li>
             </ul>
           </article>
 
@@ -289,8 +453,10 @@
           <p class="eyebrow">Programa de Acompanhamento Paliativo</p>
           <h2>A intensidade do cuidado acompanha a necessidade da pessoa.</h2>
           <p>
-            Após a avaliação inicial, pacientes que precisam de continuidade podem receber acompanhamento
-            em diferentes intensidades. O nível pode aumentar ou diminuir conforme a evolução clínica.
+            Após a avaliação inicial, pacientes que precisam de uma estrutura assistencial contínua podem receber
+            acompanhamento em diferentes intensidades. O nível pode aumentar ou diminuir conforme a evolução clínica.
+            Pacientes estáveis que necessitam apenas de seguimento médico presencial podem permanecer no
+            Acompanhamento Médico em Consultório, sem necessidade de ingressar nos níveis N1–N3.
           </p>
         </div>
 
@@ -306,18 +472,18 @@
           <article class="level-card">
             <span>N2A</span>
             <h3>Cuidado Médico</h3>
-            <strong>R$ 500/mês</strong>
+            <strong>R$ 700/mês</strong>
             <p>Para necessidade de revisão médica regular.</p>
-            <ul><li>1 teleconsulta médica/mês</li></ul>
+            <ul><li>1 visita médica domiciliar/mês</li></ul>
           </article>
 
           <article class="level-card">
             <span>N2B</span>
             <h3>Cuidado Integrado</h3>
-            <strong>R$ 800/mês</strong>
+            <strong>R$ 1.000/mês</strong>
             <p>Para complexidade moderada com necessidade multiprofissional.</p>
             <ul>
-              <li>1 teleconsulta médica/mês</li>
+              <li>1 visita médica domiciliar/mês</li>
               <li>Enfermagem semanal por telessaúde</li>
             </ul>
           </article>
@@ -394,6 +560,7 @@
                 Paliativos pela USP. Enfermeira do Serviço de Cuidados Paliativos do Hospital Nove de Julho — SP
                 e Coordenadora do Comitê de Enfermagem da Academia Nacional de Cuidados Paliativos (ANCP).
               </p>
+              <div class="team-credentials">COREN-SP 436802</div>
             </div>
           </article>
         </div>
@@ -516,6 +683,7 @@
             Modalidade de interesse
             <select name="modalidade">
               <option>Avaliação em consultório</option>
+              <option>Acompanhamento médico em consultório</option>
               <option>Teleconsulta</option>
               <option>Avaliação domiciliar</option>
               <option>Reunião familiar on-line</option>
