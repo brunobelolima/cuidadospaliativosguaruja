@@ -1,1 +1,11 @@
-Substitua index.html e adicione programa.html NA RAIZ do repositório brunobelolima/cuidadospaliativos. Não basta publicar somente programa.html: é obrigatório substituir index.html. Preserve styles.css, script.js, agendar.html, agendamento.js e assets. Este pacote remove o formulário de contato e transfere o programa para a página secundária, mantendo os botões e os conteúdos atuais. A publicação direta não ocorreu (GitHub 403).
+SEO — Cuidados Paliativos no Guarujá
+
+Substitua os arquivos deste pacote na raiz do repositório brunobelolima/cuidadospaliativos, preservando styles.css, agendamento.js e assets. Não envie este LEIA-ME ao site.
+
+Inclui títulos e descrições únicos, URLs canônicas, compartilhamento social, dados estruturados da clínica/profissional e breadcrumbs, sitemap e identificação CRM-SP 164575. Mantém programa apenas na página secundária, sem formulário de contato; presencial no Google Agenda, demais modalidades no WhatsApp.
+
+GitHub Pages: robots.txt dentro de /cuidadospaliativos/ não é o robots.txt do domínio. O Google consulta https://brunobelolima.github.io/robots.txt. Não substitua regras de outros projetos. Envie o sitemap diretamente ao Search Console usando uma propriedade de prefixo https://brunobelolima.github.io/cuidadospaliativos/. Depois solicite indexação da página inicial e das páginas secundárias.
+
+Não foram instalados rastreadores nem incluídas avaliações, coordenadas ou credenciais não confirmadas. A implementação não garante posição no Google. Ainda é necessário publicar e validar no Rich Results Test e Search Console. Nenhum escore Lighthouse ou posição de busca foi medido.
+
+Referências: https://developers.google.com/search/docs/appearance/structured-data/local-business?hl=pt-BR ; https://developers.google.com/search/docs/appearance/title-link ; https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap
