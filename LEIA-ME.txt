@@ -1,20 +1,7 @@
-PROGRAMA DE ACOMPANHAMENTO PALIATIVO — GITHUB
+1. Baixe o repositório https://github.com/brunobelolima/cuidadospaliativos e extraia.
+2. Coloque atualizar_endereco.py ao lado de index.html.
+3. Execute: python3 atualizar_endereco.py
+4. Envie o index.html atualizado para a raiz do repositório GitHub.
+5. Verifique o site publicado após alguns minutos.
 
-Este pacote foi preparado para o repositório brunobelolima/cuidadospaliativos.
-
-1. No GitHub, clique em Code > Download ZIP e extraia a pasta.
-2. Copie separar_programa.py para a mesma pasta de index.html e styles.css.
-3. Abra o Terminal nessa pasta e execute: python3 separar_programa.py
-4. Serão gerados/alterados:
-   - index.html: retira o programa da página inicial e altera o menu;
-   - programa.html: nova página interna com todo o conteúdo original;
-   - index.antes-programa.html: backup LOCAL, não publicar.
-5. Confira os preços e serviços. Depois envie APENAS index.html e programa.html
-   para a raiz do repositório no GitHub (Add file > Upload files).
-6. Aguarde a publicação pelo GitHub Pages.
-
-Endereço esperado:
-https://brunobelolima.github.io/cuidadospaliativos/programa.html
-
-O script não altera preços, descrições ou demais serviços: usa o conteúdo do
-index.html existente no momento da execução.
+Este script adiciona um bloco de endereço na seção de agendamento da página inicial. Não altera a configuração do Google Agenda: configure o campo Local da página de agendamento no próprio Google Agenda com 'Rua Arthur Costa Filho, 159, Guarujá - SP'.
