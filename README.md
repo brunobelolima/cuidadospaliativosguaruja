@@ -1,74 +1,29 @@
-# Site — Bruno Belo Lima | Clínica Médica e Cuidados Paliativos
+# Agendamento de consultas — GitHub Pages
 
-Site estático responsivo, pronto para hospedagem em GitHub Pages, Netlify, Vercel ou servidor convencional.
+Integração com a página de agendamento criada no Google Agenda da conta brunobelolimacp@gmail.com.
 
-## Arquivos
-- `index.html` — página principal
-- `styles.css` — identidade visual e responsividade
-- `script.js` — menu mobile e formulário demonstrativo
-- `assets/logo.png` — símbolo aprovado
+## Publicar no site existente
 
-## Antes de publicar
-1. O formulário já está conectado ao WhatsApp profissional: (13) 99610-1806.
-2. E-mail profissional configurado: brunobelolimacp@gmail.com.
-3. Credenciais profissionais configuradas: CRM-SP 164574 • RQE 1180261.
-4. Revisar disponibilidade geográfica das visitas domiciliares.
-4. Revisar valores e termos comerciais antes da publicação.
-5. Adicionar CRM/RQE no rodapé ou página institucional, se desejar.
-6. Incluir Política de Privacidade e Termos de Uso se houver coleta de dados pelo formulário.
+1. Extraia este ZIP no computador.
+2. Envie `agendar.html` e `agendamento.js` para a raiz do repositório `brunobelolima/cuidadospaliativos`, junto ao `index.html` atual. Envie os arquivos extraídos, não o ZIP.
+3. No `index.html`, adicione ao menu: `<a href="./agendar.html">Agendar consulta on-line</a>`.
+4. Opcionalmente, adicione `<script src="./agendamento.js" defer></script>` imediatamente antes de `</body>` para mostrar um botão flutuante. O script também atualiza links marcados com `data-agendar-consulta`.
+5. Faça commit e aguarde a implantação do GitHub Pages. A página ficará em `https://brunobelolima.github.io/cuidadospaliativos/agendar.html`.
 
-## Publicação no GitHub Pages
-Envie os arquivos para a raiz de um repositório e ative Pages em Settings > Pages.
+O pacote não substitui o index.html nem altera os demais serviços. Não precisa de Python, npm, servidor ou credenciais. Se a incorporação for bloqueada pelo navegador ou pelo Google, o botão abre a mesma página diretamente.
 
-## Observação
-O formulário monta a solicitação no navegador e abre uma conversa no WhatsApp profissional. Os dados não são enviados a um servidor próprio do site antes dessa ação.
+## Configuração existente no Google Agenda
 
-## Equipe profissional
-- Bruno Belo Lima: foto e minicurrículo inseridos.
-- Marinete Esteves Franco: foto e minicurrículo inseridos.
-- As imagens são carregadas a partir das fontes originais do site iCare/Google Drive.
+- Título: Consulta Médica — Bruno Belo Lima.
+- Sextas-feiras, das 08h às 12h; consultas de uma hora.
+- Fuso: America/Sao_Paulo.
+- Nome, sobrenome, e-mail e telefone obrigatórios.
+- Convite e confirmação por e-mail.
+- Verificação de conflitos na agenda principal Bruno Lima. As agendas iClinic não estão incluídas nesta verificação.
+- Janela configurada: até 60 dias à frente e antecedência mínima de 4 horas.
 
-## Valores de acompanhamento — atualização v1.9
-- N1 — R$ 300/mês
-- N2A — R$ 700/mês: 1 visita médica domiciliar/mês
-- N2B — R$ 1.000/mês: 1 visita médica domiciliar/mês + enfermagem semanal por telessaúde
-- N3 — R$ 1.500/mês: mantido
+Horários ocupados na agenda principal são retirados da disponibilidade. Reservas e dados são administrados pelo Google, não pelo GitHub. A interface não cria eventos nem grava dados de pacientes no repositório. O site existente ainda precisa receber estes arquivos; este pacote não foi publicado automaticamente.
 
-## Atualização v2.0 — acompanhamento ambulatorial
-- Acompanhamento Médico em Consultório: R$ 600.
-- Inclui 1 consulta médica presencial + 1 reavaliação em até 30 dias.
-- Modalidade separada do Programa N1–N3.
-- Indicada para pacientes estáveis que necessitam seguimento médico presencial sem acompanhamento domiciliar ou de enfermagem contínuo.
+## Conferir depois da publicação
 
-## Atualização v2.1 — fluxo interativo da primeira avaliação
-- Inserido fluxo progressivo no site para orientar familiares entre consultório, domicílio e teleconsulta.
-- Cada pergunta aparece somente após a anterior ser respondida.
-- Triagem de segurança interrompe o fluxo eletivo quando há possível urgência/emergência.
-- Resultado final mostra modalidade sugerida, justificativa, valor e CTA para agendamento.
-
-## Atualização v2.3 — N2B
-- N2B — Cuidado Integrado — R$ 1.000/mês.
-- Para complexidade moderada com necessidade multiprofissional.
-- Inclui 1 visita médica domiciliar/mês + 1 teleconsulta em até 1 mês.
-- Enfermagem por telessaúde 1x por semana.
-
-## Atualização v2.4 — estrutura final dos níveis
-
-- N1 — Acompanhamento — R$ 300/mês
-  - 2 teleconsultas de enfermagem/mês.
-
-- N2A — Cuidado Médico — R$ 700/mês
-  - 1 visita médica domiciliar/mês.
-  - 1 teleconsulta médica em até 1 mês.
-
-- N2B — Cuidado Integrado — R$ 1.300/mês
-  - 1 visita médica domiciliar/mês.
-  - 1 teleconsulta médica em até 1 mês.
-  - 1 teleconsulta de enfermagem/semana.
-
-- N3 — Cuidado Intensivo — R$ 2.000/mês
-  - 2 visitas médicas domiciliares/mês.
-  - 2 teleconsultas médicas/mês.
-  - 1 teleconsulta de enfermagem/semana.
-
-Terminologia padronizada: “teleconsulta de enfermagem”.
+Abra a página pelo celular e computador, teste o botão e confira a disponibilidade na sexta-feira. Não faça uma reserva fictícia em nome de paciente. Confirme que o Google apresenta o formulário com os campos obrigatórios antes de divulgar o link.

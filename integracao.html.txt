@@ -1,0 +1,8 @@
+<!-- Opção 1: acrescente ao menu ou à seção de atendimento -->
+<a href="./agendar.html">Agendar consulta on-line</a>
+
+<!-- Opção 2: botão flutuante; acrescente antes de </body> -->
+<script src="./agendamento.js" defer></script>
+
+<!-- Opcional: para o script atualizar um botão existente -->
+<a href="./agendar.html" data-agendar-consulta>Agende sua consulta</a>
