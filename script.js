@@ -163,6 +163,23 @@ Se houver uma situação de urgência ou emergência, não aguardarei resposta p
     root.querySelector('#fs-text').textContent = info.text;
     root.querySelector('#fs-why').innerHTML = `<strong>Por quê?</strong> ${why.join('; ')}.`;
     root.querySelector('#fs-price').textContent = info.price;
+    const bookingLink = result.querySelector('.decision-result-actions a');
+    if (bookingLink) {
+      const messages = {
+        home: 'Olá! Gostaria de agendar um atendimento domiciliar.',
+        tele: 'Olá! Gostaria de informações sobre teleconsultoria ou teleconsulta.',
+        team: 'Olá! Gostaria de orientação para escolher a modalidade de atendimento.'
+      };
+      bookingLink.href = mode === 'office' ? './agendar.html' : 'https://wa.me/5513996101806?text=' + encodeURIComponent(messages[mode]);
+      bookingLink.textContent = mode === 'office' ? 'Agendar consulta presencial' : 'Falar pelo WhatsApp';
+      if (mode === 'office') {
+        bookingLink.removeAttribute('target');
+        bookingLink.removeAttribute('rel');
+      } else {
+        bookingLink.target = '_blank';
+        bookingLink.rel = 'noopener noreferrer';
+      }
+    }
     result.hidden = false;
     result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
@@ -203,4 +220,5 @@ Se houver uma situação de urgência ou emergência, não aguardarei resposta p
   showStep(1);
 })();
 /* FIRST_ASSESSMENT_FLOW_END */
+
 

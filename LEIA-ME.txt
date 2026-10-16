@@ -1,7 +1,1 @@
-1. Baixe o repositório https://github.com/brunobelolima/cuidadospaliativos e extraia.
-2. Coloque atualizar_endereco.py ao lado de index.html.
-3. Execute: python3 atualizar_endereco.py
-4. Envie o index.html atualizado para a raiz do repositório GitHub.
-5. Verifique o site publicado após alguns minutos.
-
-Este script adiciona um bloco de endereço na seção de agendamento da página inicial. Não altera a configuração do Google Agenda: configure o campo Local da página de agendamento no próprio Google Agenda com 'Rua Arthur Costa Filho, 159, Guarujá - SP'.
+Substitua agendar.html, index.html e script.js na raiz de brunobelolima/cuidadospaliativos. Preserve styles.css e assets. Apenas o atendimento presencial utiliza o Google Agenda; teleconsultoria/teleconsulta e domicílio usam WhatsApp. O fluxo Qual atendimento também direciona conforme a modalidade. Nenhuma alteração foi publicada: GitHub retornou 403. A agenda Google presencial permanece inalterada.
