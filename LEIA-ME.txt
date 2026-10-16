@@ -1,0 +1,9 @@
+CORREÇÃO DA INTEGRAÇÃO
+
+Extraia o ZIP e envie os 3 arquivos HTML/JS para a RAIZ do repositório cuidadospaliativos. Substitua os arquivos existentes de mesmo nome: index.html, agendar.html e agendamento.js. Não crie uma subpasta e não envie apenas o ZIP.
+
+Mantenha assets/, script.js e styles.css atuais. O index.html já está integrado: não precisa editar trechos manualmente.
+
+O pacote corrige os botões Agende sua consulta e adiciona o acesso à agenda na seção Agendamento. O Google Agenda aplica o prazo de 17 horas.
+
+Não configura domínio próprio nem separa a seção Programa de Acompanhamento. Essas alterações são distintas desta correção.
