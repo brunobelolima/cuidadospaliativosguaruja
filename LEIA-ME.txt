@@ -1,9 +1,20 @@
-CORREÇÃO DA INTEGRAÇÃO
+PROGRAMA DE ACOMPANHAMENTO PALIATIVO — GITHUB
 
-Extraia o ZIP e envie os 3 arquivos HTML/JS para a RAIZ do repositório cuidadospaliativos. Substitua os arquivos existentes de mesmo nome: index.html, agendar.html e agendamento.js. Não crie uma subpasta e não envie apenas o ZIP.
+Este pacote foi preparado para o repositório brunobelolima/cuidadospaliativos.
 
-Mantenha assets/, script.js e styles.css atuais. O index.html já está integrado: não precisa editar trechos manualmente.
+1. No GitHub, clique em Code > Download ZIP e extraia a pasta.
+2. Copie separar_programa.py para a mesma pasta de index.html e styles.css.
+3. Abra o Terminal nessa pasta e execute: python3 separar_programa.py
+4. Serão gerados/alterados:
+   - index.html: retira o programa da página inicial e altera o menu;
+   - programa.html: nova página interna com todo o conteúdo original;
+   - index.antes-programa.html: backup LOCAL, não publicar.
+5. Confira os preços e serviços. Depois envie APENAS index.html e programa.html
+   para a raiz do repositório no GitHub (Add file > Upload files).
+6. Aguarde a publicação pelo GitHub Pages.
 
-O pacote corrige os botões Agende sua consulta e adiciona o acesso à agenda na seção Agendamento. O Google Agenda aplica o prazo de 17 horas.
+Endereço esperado:
+https://brunobelolima.github.io/cuidadospaliativos/programa.html
 
-Não configura domínio próprio nem separa a seção Programa de Acompanhamento. Essas alterações são distintas desta correção.
+O script não altera preços, descrições ou demais serviços: usa o conteúdo do
+index.html existente no momento da execução.
