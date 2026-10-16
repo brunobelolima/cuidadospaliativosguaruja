@@ -121,7 +121,7 @@
         <a href="#cuidados">Cuidados Paliativos</a>
         <a href="#primeira-avaliacao">Qual atendimento?</a>
         <a href="#servicos">Atendimento</a>
-        <a href="#programa">Acompanhamento</a>
+        <a href="./programa.html">Acompanhamento</a>
         <a href="#sobre">Sobre</a>
         <a class="btn btn-small" href="./agendar.html">Agendar atendimento</a>
       </nav>
@@ -447,67 +447,7 @@
       </div>
     </section>
 
-    <section class="section section-deep" id="programa">
-      <div class="container">
-        <div class="section-heading light">
-          <p class="eyebrow">Programa de Acompanhamento Paliativo</p>
-          <h2>A intensidade do cuidado acompanha a necessidade da pessoa.</h2>
-          <p>
-            Após a avaliação inicial, pacientes que precisam de uma estrutura assistencial contínua podem receber
-            acompanhamento em diferentes intensidades. O nível pode aumentar ou diminuir conforme a evolução clínica.
-            Pacientes estáveis que necessitam apenas de seguimento médico presencial podem permanecer no
-            Acompanhamento Médico em Consultório, sem necessidade de ingressar nos níveis N1–N3.
-          </p>
-        </div>
 
-        <div class="level-grid">
-          <article class="level-card">
-            <span>N1</span>
-            <h3>Acompanhamento</h3>
-            <strong>R$ 300/mês</strong>
-            <p>Para situações mais estáveis.</p>
-            <ul><li>2 teleconsultas de enfermagem/mês</li></ul>
-          </article>
-
-          <article class="level-card">
-            <span>N2A</span>
-            <h3>Cuidado Médico</h3>
-            <strong>R$ 700/mês</strong>
-            <p>Para necessidade de revisão médica regular.</p>
-            <ul><li>1 visita médica domiciliar/mês</li>
-              <li>1 teleconsulta em até 1 mês</li></ul>
-          </article>
-
-          <article class="level-card">
-            <span>N2B</span>
-            <h3>Cuidado Integrado</h3>
-            <strong>R$ 1.300/mês</strong>
-            <p>Para complexidade moderada com necessidade multiprofissional.</p>
-            <ul>
-              <li>1 visita médica domiciliar/mês + 1 teleconsulta em até 1 mês</li>
-              <li>1 teleconsulta de enfermagem/semana</li>
-            </ul>
-          </article>
-
-          <article class="level-card">
-            <span>N3</span>
-            <h3>Cuidado Intensivo</h3>
-            <strong>R$ 2.000/mês</strong>
-            <p>Para maior complexidade e instabilidade.</p>
-            <ul>
-              <li>2 visitas médicas domiciliares/mês</li>
-              <li>2 teleconsultas médicas/mês</li>
-              <li>1 teleconsulta de enfermagem/semana</li>
-            </ul>
-          </article>
-        </div>
-
-        <p class="level-note">
-          Os níveis não representam “planos melhores ou piores”. A composição é definida pela necessidade assistencial
-          e pelo julgamento clínico, com participação do paciente e da família.
-        </p>
-      </div>
-    </section>
 
     <section class="section" id="sobre">
       <div class="container">
@@ -657,55 +597,11 @@
           </div>
         </div>
 
-        <form class="contact-form" id="lead-form">
-          <div class="form-note">
-            <strong>Formulário de solicitação de contato</strong>
-            <span>Preencha os dados e continue pelo WhatsApp para solicitar o agendamento.</span>
-          </div>
-
-          <label>
-            Nome
-            <input name="nome" autocomplete="name" required />
-          </label>
-
-          <label>
-            Telefone
-            <input name="telefone" autocomplete="tel" required />
-          </label>
-
-          <label>
-            Para quem é o atendimento?
-            <select name="para_quem">
-              <option>Para mim</option>
-              <option>Para um familiar</option>
-              <option>Para um paciente sob meus cuidados</option>
-            </select>
-          </label>
-
-          <label>
-            Modalidade de interesse
-            <select name="modalidade">
-              <option>Avaliação em consultório</option>
-              <option>Acompanhamento médico em consultório</option>
-              <option>Teleconsulta</option>
-              <option>Avaliação domiciliar</option>
-              <option>Reunião familiar on-line</option>
-              <option>Não sei qual é a melhor opção</option>
-            </select>
-          </label>
-
-          <label>
-            Como podemos ajudar?
-            <textarea name="mensagem" rows="4" placeholder="Conte brevemente a situação. Não use este campo para emergências."></textarea>
-          </label>
-
-          <label class="privacy-check">
-            <input type="checkbox" required />
-            <span>Li a <a href="politica-de-privacidade.html" target="_blank">Política de Privacidade</a> e estou ciente de que os dados preenchidos serão utilizados para atender minha solicitação de contato.</span>
-          </label>
-          <button class="btn" type="submit">Solicitar contato</button>
-          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-        </form>
+        <aside class="contact-form" aria-label="Contato pelo WhatsApp">
+          <h3>Fale com a equipe</h3>
+          <p>Para teleconsultoria, teleconsulta ou atendimento domiciliar, combine o atendimento pelo WhatsApp.</p>
+          <a class="btn" href="https://wa.me/5513996101806" target="_blank" rel="noopener noreferrer">Falar pelo WhatsApp</a>
+        </aside>
       </div>
     </section>
   </main>
@@ -742,5 +638,6 @@
   <script src="agendamento.js" defer></script>
 </body>
 </html>
+
 
 
