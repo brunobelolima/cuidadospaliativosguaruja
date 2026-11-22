@@ -1,0 +1,59 @@
+/* Identidade Bruno Belo Lima | 2026. Carregar DEPOIS de styles.css. */
+:root{--deep:#241b56;--ocean:#008fa6;--sea:#54c4cb;--sand:#a66a48;--cream:#f1f6fb;--ivory:#f8fbfe;--ink:#202741;--muted:#5f6d82;--line:#dfe7f1;--white:#fff;--shadow:0 22px 65px rgba(36,27,86,.10);--radius:24px;--radius-sm:15px}
+html{scroll-behavior:smooth}
+body{background:var(--ivory);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+.site-header{background:rgba(255,255,255,.91);border-bottom:1px solid #e4eaf4;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.nav-wrap{min-height:84px;height:auto;padding-block:10px}
+.brand-mark{width:76px;height:55px;object-fit:contain}
+.brand-copy strong{color:var(--deep);font-size:17px}
+.brand-copy small{color:#65718b;font-size:11px}
+.nav a{color:var(--deep)}
+.nav a:not(.btn):hover{color:var(--ocean)}
+.btn,.btn:link,.btn:visited,.nav .btn{background:linear-gradient(110deg,#30216e,#127f9d);color:#fff!important;border-radius:13px;box-shadow:0 10px 25px rgba(37,31,104,.17);font-weight:750;transition:transform .2s,box-shadow .2s,filter .2s}
+.btn:hover,.btn:focus-visible{filter:brightness(1.08);transform:translateY(-2px);box-shadow:0 14px 28px rgba(37,31,104,.22)}
+.hero{background:radial-gradient(ellipse at 84% 10%,rgba(65,189,206,.23),transparent 43%),radial-gradient(ellipse at 5% 88%,rgba(74,44,134,.08),transparent 38%),linear-gradient(160deg,#fff 10%,#eff7fc 100%);padding:90px 0 82px}
+.hero-wave{border-color:rgba(0,143,166,.12)}
+.hero-grid{gap:clamp(30px,5vw,80px);grid-template-columns:minmax(0,1.25fr) minmax(300px,.85fr)}
+.eyebrow{color:#00839a;letter-spacing:.13em}
+.hero h1,.section h2,.split h2,.about-grid h2,.contact-section h2{color:var(--deep);letter-spacing:-.045em}
+.hero h1{font-size:clamp(40px,5.1vw,68px);line-height:1.08}
+.lead{color:#52627a;font-size:clamp(17px,1.6vw,20px)}
+.hero-card{background:linear-gradient(150deg,#282061,#172e71 58%,#087e96);border:1px solid rgba(255,255,255,.13);border-radius:30px;box-shadow:0 30px 70px rgba(29,31,92,.22)}
+.hero-logo{width:min(245px,75%);height:auto;padding:12px;background:rgba(255,255,255,.96);border-radius:18px;filter:none}
+.hero-card-kicker{color:#b9eaf0}
+.hero-card h2{color:#fff!important}
+.hero-card-line{background:#c18a63}
+.hero-points span{border:1px solid #dce5ef;background:rgba(255,255,255,.85);color:#30216e}
+.trust-strip{background:#fff;border-color:#e7ecf5}
+.trust-grid strong{color:var(--deep)}
+.section-soft,.first-assessment-flow{background:linear-gradient(180deg,#eef6fb,#f9fbff)}
+.section-deep{background:linear-gradient(135deg,#201954,#28347a 62%,#087d94)}
+.section-deep .eyebrow{color:#8be2e6}
+.card,.team-card,.price-card,.decision-step,.decision-result,.faq-grid details{border:1px solid #e2e9f4;box-shadow:0 12px 36px rgba(34,31,89,.045);border-radius:23px}
+.card,.team-card,.price-card{transition:transform .2s,box-shadow .2s}
+.card:hover,.team-card:hover,.price-card:hover{transform:translateY(-4px);box-shadow:0 18px 42px rgba(34,31,89,.09)}
+.card-number,.level-card>span{color:#a66a48}
+.card h3,.price-card h3,.team-card h3,.decision-step h3,.decision-result h3{color:var(--deep)}
+.check-list div{background:#fff;border:1px solid #e4eaf4;box-shadow:0 6px 22px rgba(31,34,88,.03)}
+.check-list div:before{color:#009ba9}
+.about-visual{background:linear-gradient(145deg,#e4f7fa,#e9e8f6)}
+.about-visual img{width:min(330px,82%);padding:16px;background:rgba(255,255,255,.85);border-radius:25px}
+blockquote,.credentials,.team-credentials{border-left-color:#a66a48}
+.contact-form{background:#eff6fc;border:1px solid #e2e9f4}
+input:focus,select:focus,textarea:focus{border-color:#008fa6;box-shadow:0 0 0 3px rgba(0,143,166,.14)}
+.footer{background:linear-gradient(140deg,#19133f,#282366 70%,#0b526b)}
+.footer-brand img{width:95px;max-height:75px;object-fit:contain;background:white;border-radius:12px;padding:7px}
+.decision-progress-bar{background:linear-gradient(90deg,#42318c,#008fa6)}
+.decision-option:hover,.decision-option:focus,.decision-secondary:hover,.decision-secondary:focus{background:#edf9fb;border-color:#008fa6}
+:focus-visible{outline:3px solid #00a4b7;outline-offset:3px}
+@media(max-width:1000px){.hero-grid{grid-template-columns:1fr}.hero-card{max-width:650px}.nav{background:#fff;border-color:#e2e9f4}}
+@media(max-width:720px){.nav-wrap{min-height:72px}.brand-mark{width:65px;height:48px}.hero{padding:54px 0 62px}.hero h1{font-size:clamp(36px,9vw,48px)}.hero-card{padding:30px}.hero-logo{width:170px}.hero-actions{gap:16px}.section{padding:70px 0}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+
+/* Redes sociais — rodapé e seção Sobre */
+.social-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px;align-items:center}
+.social-links a{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(36,27,91,.16);border-radius:999px;padding:11px 16px;background:#fff;color:#241b5b;text-decoration:none;font-size:14px;font-weight:700;transition:transform .2s,box-shadow .2s,border-color .2s}
+.social-links a:hover,.social-links a:focus-visible{transform:translateY(-2px);border-color:#00a4b3;box-shadow:0 8px 24px rgba(36,27,91,.1)}
+.social-links svg{width:19px;height:19px;fill:currentColor;flex-shrink:0}
+.footer .social-links a{background:rgba(255,255,255,.09);color:#fff;border-color:rgba(255,255,255,.22)}
+@media(max-width:520px){.social-links a{flex:1;justify-content:center}}

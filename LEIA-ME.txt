@@ -1,11 +1,24 @@
-SEO — Cuidados Paliativos no Guarujá
+ATUALIZAÇÃO VISUAL — BRUNO BELO LIMA
+====================================
+Esta atualização é incremental: preserva o site e seus formulários/fluxos.
 
-Substitua os arquivos deste pacote na raiz do repositório brunobelolima/cuidadospaliativos, preservando styles.css, agendamento.js e assets. Não envie este LEIA-ME ao site.
+1. No repositório brunobelolima/cuidadospaliativosguaruja, envie:
+   - modernizacao.css para a raiz
+   - assets/logo-infinito.png para a pasta assets
+2. Em index.html, imediatamente após <link rel="stylesheet" href="styles.css" />, adicione:
+   <link rel="stylesheet" href="modernizacao.css" />
+3. Substitua TODAS as referências de imagem src="assets/logo.png" por src="assets/logo-infinito.png" no index.html e nas outras páginas que usam a marca.
+4. Nas outras páginas HTML, acrescente o link para modernizacao.css depois do styles.css, ajustando caminhos relativos quando necessário.
+5. No index.html, substitua os metadados og:image, twitter:image, image e logo do JSON-LD para:
+   https://cuidadospaliativosguaruja.com/assets/logo-infinito.png
+   Atualize canonical, og:url e URLs do JSON-LD para https://cuidadospaliativosguaruja.com/ (sem /cuidadospaliativos/).
+6. Faça commit e aguarde a publicação do GitHub Pages. Teste desktop e celular.
 
-Inclui títulos e descrições únicos, URLs canônicas, compartilhamento social, dados estruturados da clínica/profissional e breadcrumbs, sitemap e identificação CRM-SP 164575. Mantém programa apenas na página secundária, sem formulário de contato; presencial no Google Agenda, demais modalidades no WhatsApp.
+Atenção: NÃO apague styles.css, script.js, formulários ou arquivos HTML.
+A logo é uma versão PNG com transparência obtida da imagem enviada, não um redesenho.
 
-GitHub Pages: robots.txt dentro de /cuidadospaliativos/ não é o robots.txt do domínio. O Google consulta https://brunobelolima.github.io/robots.txt. Não substitua regras de outros projetos. Envie o sitemap diretamente ao Search Console usando uma propriedade de prefixo https://brunobelolima.github.io/cuidadospaliativos/. Depois solicite indexação da página inicial e das páginas secundárias.
-
-Não foram instalados rastreadores nem incluídas avaliações, coordenadas ou credenciais não confirmadas. A implementação não garante posição no Google. Ainda é necessário publicar e validar no Rich Results Test e Search Console. Nenhum escore Lighthouse ou posição de busca foi medido.
-
-Referências: https://developers.google.com/search/docs/appearance/structured-data/local-business?hl=pt-BR ; https://developers.google.com/search/docs/appearance/title-link ; https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap
+ATUALIZAÇÃO — LINKS SOCIAIS
+1. No index.html, insira o conteúdo de redes-sociais.html dentro do elemento <footer>, imediatamente antes de </footer> (ou na seção Sobre).
+2. A folha modernizacao.css já contém o estilo dos botões e ícones.
+3. Links: LinkedIn https://www.linkedin.com/in/bruno-belo-lima-41617793/ e Instagram https://www.instagram.com/brunobelolimacp/
+4. Faça commit dos arquivos alterados no GitHub. Este pacote não foi publicado automaticamente.
