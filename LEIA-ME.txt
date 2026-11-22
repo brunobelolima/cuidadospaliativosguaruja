@@ -1,24 +1,12 @@
-ATUALIZAÇÃO VISUAL — BRUNO BELO LIMA
-====================================
-Esta atualização é incremental: preserva o site e seus formulários/fluxos.
+ATUALIZAÇÃO DO SITE — BRUNO BELO LIMA
 
-1. No repositório brunobelolima/cuidadospaliativosguaruja, envie:
-   - modernizacao.css para a raiz
-   - assets/logo-infinito.png para a pasta assets
-2. Em index.html, imediatamente após <link rel="stylesheet" href="styles.css" />, adicione:
-   <link rel="stylesheet" href="modernizacao.css" />
-3. Substitua TODAS as referências de imagem src="assets/logo.png" por src="assets/logo-infinito.png" no index.html e nas outras páginas que usam a marca.
-4. Nas outras páginas HTML, acrescente o link para modernizacao.css depois do styles.css, ajustando caminhos relativos quando necessário.
-5. No index.html, substitua os metadados og:image, twitter:image, image e logo do JSON-LD para:
-   https://cuidadospaliativosguaruja.com/assets/logo-infinito.png
-   Atualize canonical, og:url e URLs do JSON-LD para https://cuidadospaliativosguaruja.com/ (sem /cuidadospaliativos/).
-6. Faça commit e aguarde a publicação do GitHub Pages. Teste desktop e celular.
+1. Faça backup/commit do repositório antes da alteração.
+2. Copie modernizacao.css, aplicar_atualizacoes.py e assets/logo-infinito.png para a raiz do repositório, preservando a pasta assets.
+3. Execute: python3 aplicar_atualizacoes.py
+4. Revise as páginas localmente, inclusive formulários e agendamento.
+5. Publique: git add . && git commit -m "Atualiza identidade visual e redes sociais" && git push
+6. Aguarde o deploy do GitHub Pages.
 
-Atenção: NÃO apague styles.css, script.js, formulários ou arquivos HTML.
-A logo é uma versão PNG com transparência obtida da imagem enviada, não um redesenho.
+SEM TERMINAL: carregue o CSS e a imagem pelo GitHub, adicione <link rel="stylesheet" href="modernizacao.css"> após styles.css em cada HTML, substitua assets/logo.png por assets/logo-infinito.png e insira redes-sociais.html antes de </footer>.
 
-ATUALIZAÇÃO — LINKS SOCIAIS
-1. No index.html, insira o conteúdo de redes-sociais.html dentro do elemento <footer>, imediatamente antes de </footer> (ou na seção Sobre).
-2. A folha modernizacao.css já contém o estilo dos botões e ícones.
-3. Links: LinkedIn https://www.linkedin.com/in/bruno-belo-lima-41617793/ e Instagram https://www.instagram.com/brunobelolimacp/
-4. Faça commit dos arquivos alterados no GitHub. Este pacote não foi publicado automaticamente.
+Não altere CNAME, DNS nem remova styles.css. Este pacote não publica automaticamente.
