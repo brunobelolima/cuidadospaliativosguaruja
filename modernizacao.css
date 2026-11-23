@@ -57,3 +57,176 @@ input:focus,select:focus,textarea:focus{border-color:#008fa6;box-shadow:0 0 0 3p
 .social-links svg{width:19px;height:19px;fill:currentColor;flex-shrink:0}
 .footer .social-links a{background:rgba(255,255,255,.09);color:#fff;border-color:rgba(255,255,255,.22)}
 @media(max-width:520px){.social-links a{flex:1;justify-content:center}}
+
+/* CONTRASTE E PROPORÇÕES — BRUNO BELO LIMA */
+
+:root {
+  --ivory: #DCE8F0;
+  --cream: #CBDCE9;
+  --ink: #1D2944;
+  --muted: #45566E;
+  --line: #B9CBD9;
+}
+
+/* Fundos mais presentes */
+body {
+  background: #DCE8F0;
+  color: var(--ink);
+}
+
+.site-header {
+  background: rgba(224, 236, 245, .96);
+  border-bottom-color: #B7CBD9;
+}
+
+.hero {
+  background:
+    radial-gradient(circle at 85% 14%,
+      rgba(0,143,166,.20), transparent 42%),
+    linear-gradient(145deg,
+      #C4D9E7 0%,
+      #D8E5EF 52%,
+      #B9D1E0 100%);
+  padding-block: 60px;
+}
+
+.section-soft,
+.first-assessment-flow {
+  background: linear-gradient(
+    180deg, #CBDCE9, #D8E5EE);
+}
+
+.contact-section {
+  background: #D2E1EB;
+}
+
+.trust-strip {
+  background: #C3D8E6;
+}
+
+/* Espaçamento das seções */
+.section {
+  padding-block: clamp(48px, 6vw, 76px);
+}
+
+.section-heading {
+  margin-bottom: 28px;
+}
+
+/* Caixas proporcionais ao conteúdo */
+.cards,
+.pricing-grid,
+.level-grid,
+.team-grid,
+.faq-grid {
+  align-items: start;
+}
+
+.card,
+.team-card,
+.price-card,
+.decision-step,
+.decision-result,
+.faq-grid details {
+  height: auto;
+  min-height: 0;
+  padding: clamp(18px, 2.2vw, 26px);
+  background: #F3F7FB;
+  border: 1px solid #B7CAD9;
+  box-shadow: 0 8px 22px rgba(28,40,88,.09);
+}
+
+.card h3 {
+  margin: 10px 0 8px;
+  font-size: clamp(18px, 1.8vw, 22px);
+  line-height: 1.25;
+}
+
+.card p,
+.price-card p,
+.team-card p {
+  line-height: 1.5;
+}
+
+/* Cartões de serviços */
+.price-card {
+  display: block;
+}
+
+.price-card h3 {
+  font-size: clamp(23px, 2.5vw, 30px);
+}
+
+.price-card ul {
+  max-width: none;
+  margin-top: 12px;
+}
+
+/* Cartões de níveis */
+.level-card {
+  min-height: 0;
+  height: auto;
+  padding: 22px;
+  background: rgba(255,255,255,.13);
+}
+
+.level-card h3 {
+  margin: 14px 0 8px;
+}
+
+/* Caixas de checklist */
+.check-list div {
+  padding-block: 12px;
+  background: #EDF4F9;
+  border: 1px solid #B7CAD9;
+}
+
+/* Formulários e área de contato */
+.contact-form {
+  background: #E8F1F7;
+  border-color: #B7CAD9;
+  align-content: start;
+}
+
+/* Cartão principal */
+.hero-card {
+  padding: clamp(24px, 3vw, 36px);
+}
+
+.hero-card h2 {
+  font-size: clamp(24px, 2.8vw, 31px);
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .cards.three,
+  .pricing-grid,
+  .level-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-grid,
+  .split,
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
+@media (max-width: 620px) {
+  .cards.three,
+  .pricing-grid,
+  .level-grid,
+  .check-list {
+    grid-template-columns: 1fr;
+  }
+
+  .card,
+  .team-card,
+  .price-card,
+  .decision-step,
+  .decision-result {
+    padding: 20px;
+  }
+}
